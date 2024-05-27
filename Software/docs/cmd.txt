@@ -1,0 +1,68 @@
+ffmpeg -loglevel error \
+-f v4l2 \
+-i /dev/video2 \
+-vcodec h264 \
+-f alsa \
+-i hw:1 \
+-preset ultrafast \
+-tune zerolatency \
+-thread_type slice \
+-slices 1 \
+-intra-refresh 1 \
+-r 30 \
+-g 60 \
+-s 800x600 \
+-aspect 4:3 \
+-acodec aac \
+-ar 44100 \
+-b:v 2.5M \
+-minrate:v 900k \
+-maxrate:v 2.5M \
+-bufsize:v 5M \
+-b:a 128K \
+-pix_fmt yuv420p \
+-f mpegts udp://192.168.0.10:35001?pkt_size=1316
+
+/home/pi/ffmpeg/ffmpeg -ar 48000 -ac 1 -f alsa -i hw:1 -f v4l2 -c:v h264 -r 30 -s 1920x1080 -i /dev/video2 -t 60 -copyinkf -codec:v copy -codec:a aac -ab 128k -g 10 USB/test.mp4
+
+/home/pi/ffmpeg/ffmpeg
+ -ar 48000
+ -ac 1
+ -f alsa
+ -i hw:1
+ -f v4l2
+ -c:v h264
+ -r 30
+ -s 1920x1080
+ -i /dev/video2
+ -t 60
+ -copyinkf
+ -codec:v copy
+ -codec:a aac
+ -ab 128k
+ -g 10 USB/test.mp4
+
+
+/home/pi/ffmpeg/ffmpeg -f alsa -ac 1 -ar 48000 -i hw:1,0 -f v4l2 -i /dev/video2 -c:v h264 -framerate 30 -video_size 1920x1080 -codec:v copy -codec:a aac -b:v 10M -ab 128k -copyinkf /home/pi/USB/temp.mp4
+
+v4l2-ctl --device=/dev/video2 --all
+
+
+                     brightness 0x00980900 (int)    : min=-64 max=64 step=1 default=0 value=0
+                       contrast 0x00980901 (int)    : min=0 max=64 step=1 default=32 value=32
+                     saturation 0x00980902 (int)    : min=0 max=128 step=1 default=64 value=64
+                            hue 0x00980903 (int)    : min=-40 max=40 step=1 default=0 value=0
+ white_balance_temperature_auto 0x0098090c (bool)   : default=1 value=1
+                          gamma 0x00980910 (int)    : min=72 max=500 step=1 default=100 value=100
+                           gain 0x00980913 (int)    : min=0 max=100 step=1 default=0 value=0
+           power_line_frequency 0x00980918 (menu)   : min=0 max=2 default=1 value=1
+      white_balance_temperature 0x0098091a (int)    : min=2800 max=6500 step=1 default=4600 value=4600 flags=inactive
+                      sharpness 0x0098091b (int)    : min=0 max=6 step=1 default=3 value=3
+         backlight_compensation 0x0098091c (int)    : min=0 max=2 step=1 default=1 value=1
+                  exposure_auto 0x009a0901 (menu)   : min=0 max=3 default=3 value=3
+              exposure_absolute 0x009a0902 (int)    : min=1 max=5000 step=1 default=156 value=156 flags=inactive
+         exposure_auto_priority 0x009a0903 (bool)   : default=0 value=0
+
+v4l2-ctl -d /dev/video2 --set-ctrl=brightness=0
+
+

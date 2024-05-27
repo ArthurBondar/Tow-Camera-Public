@@ -1,0 +1,13 @@
+May 23 17:13:25 raspberrypi kernel: [    0.000000] On node 0 totalpages: 196608
+May 23 17:13:25 raspberrypi kernel: [    0.000000]   Normal zone: 1728 pages used for memmap
+May 23 17:13:25 raspberrypi kernel: [    0.000000]   Normal zone: 0 pages reserved
+May 23 17:13:25 raspberrypi kernel: [    0.000000]   Normal zone: 196608 pages, LIFO batch:63
+May 23 17:13:25 raspberrypi kernel: [    0.000000] pcpu-alloc: s36864 r8192 d20480 u65536 alloc=16*4096
+May 23 17:13:25 raspberrypi kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+May 23 17:13:25 raspberrypi thd[294]: Found socket passed from systemd
+May 23 17:13:25 raspberrypi kernel: [    0.778498] dwc_otg: Microframe scheduler enabled
+May 23 17:13:25 raspberrypi kernel: [    0.816511] dwc_otg: FIQ enabled
+May 23 17:13:25 raspberrypi kernel: [    0.816517] dwc_otg: NAK holdoff enabled
+May 23 17:13:25 raspberrypi kernel: [    0.816522] dwc_otg: FIQ split-transaction FSM enabled
+May 23 17:13:25 raspberrypi kernel: [    0.816533] Module dwc_common_port init
+May 23 17:13:25 raspberrypi kernel: [    5.440716] sd 0:0:0:0: [sda] Mode Sense: 43 00 00 00

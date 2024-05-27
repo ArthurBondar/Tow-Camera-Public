@@ -1,0 +1,179 @@
+May 23 17:13:25 raspberrypi systemd-modules-load[105]: Inserted module 'i2c_dev'
+May 23 17:13:25 raspberrypi fake-hwclock[102]: Sat 23 May 20:13:22 UTC 2020
+May 23 17:13:25 raspberrypi systemd-fsck[125]: e2fsck 1.44.5 (15-Dec-2018)
+May 23 17:13:25 raspberrypi systemd-fsck[125]: rootfs: clean, 61553/917472 files, 757653/3714048 blocks
+May 23 17:13:25 raspberrypi systemd[1]: Started File System Check on Root Device.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Remount Root and Kernel File Systems...
+May 23 17:13:25 raspberrypi systemd[1]: Started udev Coldplug all Devices.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+May 23 17:13:25 raspberrypi systemd[1]: Started Helper to synchronize boot up for ifupdown.
+May 23 17:13:25 raspberrypi systemd[1]: Started Set the console keyboard layout.
+May 23 17:13:25 raspberrypi systemd[1]: Started Remount Root and Kernel File Systems.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Load/Save Random Seed...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Create System Users...
+May 23 17:13:25 raspberrypi systemd[1]: Started Load/Save Random Seed.
+May 23 17:13:25 raspberrypi systemd[1]: Started Create System Users.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Create Static Device Nodes in /dev...
+May 23 17:13:25 raspberrypi systemd[1]: Started Create Static Device Nodes in /dev.
+May 23 17:13:25 raspberrypi systemd[1]: Starting udev Kernel Device Manager...
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Local File Systems (Pre).
+May 23 17:13:25 raspberrypi systemd[1]: var-log.mount: Directory /var/log to mount over is not empty, mounting anyway.
+May 23 17:13:25 raspberrypi systemd[1]: Mounting /var/log...
+May 23 17:13:25 raspberrypi systemd[1]: Mounted /var/log.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Flush Journal to Persistent Storage...
+May 23 17:13:25 raspberrypi systemd[1]: Started Flush Journal to Persistent Storage.
+May 23 17:13:25 raspberrypi systemd[1]: Started udev Kernel Device Manager.
+May 23 17:13:25 raspberrypi systemd[1]: Found device /dev/serial1.
+May 23 17:13:25 raspberrypi systemd[1]: Found device /dev/ttyAMA0.
+May 23 17:13:25 raspberrypi systemd[1]: Found device /dev/disk/by-partuuid/6c586e13-01.
+May 23 17:13:25 raspberrypi systemd[1]: Starting File System Check on /dev/disk/by-partuuid/6c586e13-01...
+May 23 17:13:25 raspberrypi systemd-udevd[148]: Using default interface naming scheme 'v240'.
+May 23 17:13:25 raspberrypi systemd-udevd[148]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May 23 17:13:25 raspberrypi systemd-udevd[153]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Huge Pages File System being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 23 17:13:25 raspberrypi systemd-fsck[205]: fsck.fat 4.1 (2017-01-24)
+May 23 17:13:25 raspberrypi systemd-fsck[205]: /dev/mmcblk0p1: 232 files, 106930/516190 clusters
+May 23 17:13:25 raspberrypi systemd[1]: Started File System Check on /dev/disk/by-partuuid/6c586e13-01.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Rebuild Hardware Database being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Huge Pages File System being skipped.
+May 23 17:13:25 raspberrypi systemd-udevd[145]: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.
+May 23 17:13:25 raspberrypi systemd[1]: Mounting /boot...
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+May 23 17:13:25 raspberrypi systemd-udevd[150]: Process '/usr/sbin/th-cmd --socket /var/run/thd.socket --passfd --udev' failed with exit code 1.
+May 23 17:13:25 raspberrypi systemd[1]: Mounted /boot.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Local File Systems.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Set console font and keymap...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Preprocess NFS configuration...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Raise network interfaces...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Create Volatile Files and Directories...
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Started Set console font and keymap.
+May 23 17:13:25 raspberrypi systemd[1]: nfs-config.service: Succeeded.
+May 23 17:13:25 raspberrypi systemd[1]: Started Preprocess NFS configuration.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in RPC security service for NFS server being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in RPC security service for NFS client and server being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target NFS client services.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Remote File Systems (Pre).
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Remote File Systems.
+May 23 17:13:25 raspberrypi systemd[1]: Started Create Volatile Files and Directories.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Network Time Synchronization...
+May 23 17:13:25 raspberrypi systemd[1]: Started Update UTMP about System Boot/Shutdown.
+May 23 17:13:25 raspberrypi systemd[1]: Started Raise network interfaces.
+May 23 17:13:25 raspberrypi systemd[1]: Started Network Time Synchronization.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target System Initialization.
+May 23 17:13:25 raspberrypi systemd[1]: Listening on D-Bus System Message Bus Socket.
+May 23 17:13:25 raspberrypi systemd[1]: Started Daily Cleanup of Temporary Directories.
+May 23 17:13:25 raspberrypi systemd[1]: Listening on triggerhappy.socket.
+May 23 17:13:25 raspberrypi systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Sockets.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Basic System.
+May 23 17:13:25 raspberrypi systemd[1]: Starting Login Service...
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Configure Bluetooth Modems connected by UART being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Starting triggerhappy global hotkey daemon...
+May 23 17:13:25 raspberrypi systemd[1]: Starting LSB: Switch to ondemand cpu governor (unless shift key is pressed)...
+May 23 17:13:25 raspberrypi systemd[1]: Started Regular background program processing daemon.
+May 23 17:13:25 raspberrypi systemd[1]: Starting dphys-swapfile - set up, mount/unmount, and delete a swap file...
+May 23 17:13:25 raspberrypi systemd[1]: Started Manage Sound Card State (restore and store).
+May 23 17:13:25 raspberrypi thd[294]: Found socket passed from systemd
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Turn on SSH if /boot/ssh is present being skipped.
+May 23 17:13:25 raspberrypi alsactl[299]: alsactl 1.1.8 daemon started
+May 23 17:13:25 raspberrypi systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+May 23 17:13:25 raspberrypi systemd[1]: Condition check resulted in Copy user wpa_supplicant.conf being skipped.
+May 23 17:13:25 raspberrypi systemd[1]: Starting rng-tools.service...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Check for Raspberry Pi EEPROM updates...
+May 23 17:13:25 raspberrypi systemd[1]: Starting Save/Restore Sound Card State...
+May 23 17:13:25 raspberrypi systemd[1]: Starting System Logging Service...
+May 23 17:13:25 raspberrypi systemd[1]: Started D-Bus System Message Bus.
+May 23 17:13:25 raspberrypi rng-tools[306]: Starting Hardware RNG entropy gatherer daemon: rngd.
+May 23 17:13:25 raspberrypi rngd[315]: rngd 2-unofficial-mt.14 starting up...
+May 23 17:13:25 raspberrypi systemd[1]: Starting WPA supplicant...
+May 23 17:13:25 raspberrypi rngd[315]: entropy feed to the kernel ready
+May 23 17:13:25 raspberrypi systemd[1]: Starting dhcpcd on all interfaces...
+May 23 17:13:25 raspberrypi systemd[1]: Reached target System Time Synchronized.
+May 23 17:13:25 raspberrypi systemd[1]: Started Daily man-db regeneration.
+May 23 17:13:25 raspberrypi systemd[1]: Started Daily rotation of log files.
+May 23 17:13:25 raspberrypi systemd[1]: Started Daily apt download activities.
+May 23 17:13:25 raspberrypi systemd[1]: Started Daily apt upgrade and clean activities.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Timers.
+May 23 17:13:25 raspberrypi systemd[1]: Started triggerhappy global hotkey daemon.
+May 23 17:13:25 raspberrypi systemd[1]: Started rng-tools.service.
+May 23 17:13:25 raspberrypi systemd[1]: Started Check for Raspberry Pi EEPROM updates.
+May 23 17:13:25 raspberrypi systemd[1]: Started Save/Restore Sound Card State.
+May 23 17:13:25 raspberrypi avahi-daemon[301]: Found user 'avahi' (UID 108) and group 'avahi' (GID 113).
+May 23 17:13:25 raspberrypi avahi-daemon[301]: Successfully dropped root privileges.
+May 23 17:13:25 raspberrypi systemd[1]: Reached target Sound Card.
+May 23 17:13:25 raspberrypi avahi-daemon[301]: avahi-daemon 0.7 starting up.
+May 23 17:13:25 raspberrypi dhcpcd[327]: dev: loaded udev
+May 23 17:13:25 raspberrypi dphys-swapfile[298]: want /var/swap=0MByte, checking existing: deleting wrong size file (104857600), generating swapfile ...
+May 23 17:13:25 raspberrypi dbus-daemon[314]: [system] Successfully activated service 'org.freedesktop.systemd1'
+May 23 17:13:26 raspberrypi systemd[1]: Started Login Service.
+May 23 17:13:26 raspberrypi systemd[1]: Started System Logging Service.
+May 23 17:13:26 raspberrypi avahi-daemon[301]: Successfully called chroot().
+May 23 17:13:26 raspberrypi avahi-daemon[301]: Successfully dropped remaining capabilities.
+May 23 17:13:26 raspberrypi avahi-daemon[301]: No service file found in /etc/avahi/services.
+May 23 17:13:26 raspberrypi wpa_supplicant[322]: Successfully initialized wpa_supplicant
+May 23 17:13:26 raspberrypi avahi-daemon[301]: Network interface enumeration completed.
+May 23 17:13:26 raspberrypi systemd[1]: dphys-swapfile.service: Main process exited, code=exited, status=1/FAILURE
+May 23 17:13:26 raspberrypi avahi-daemon[301]: Server startup complete. Host name is raspberrypi.local. Local service cookie is 3742120730.
+May 23 17:13:26 raspberrypi systemd[1]: dphys-swapfile.service: Failed with result 'exit-code'.
+May 23 17:13:26 raspberrypi systemd[1]: Failed to start dphys-swapfile - set up, mount/unmount, and delete a swap file.
+May 23 17:13:26 raspberrypi systemd[1]: Started WPA supplicant.
+May 23 17:13:26 raspberrypi systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+May 23 17:13:26 raspberrypi systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+May 23 17:13:26 raspberrypi dhcpcd[327]: enxb827eb13f878: waiting for carrier
+May 23 17:13:26 raspberrypi raspi-config[295]: Checking if shift key is held down: No. Switching to ondemand scaling governor.
+May 23 17:13:26 raspberrypi systemd[1]: Started LSB: Switch to ondemand cpu governor (unless shift key is pressed).
+May 23 17:13:54 raspberrypi systemd[1]: systemd-fsckd.service: Succeeded.
+May 23 17:13:56 raspberrypi dhcpcd[327]: timed out
+May 23 17:13:56 raspberrypi dhcpcd[327]: timed out
+May 23 17:13:56 raspberrypi dhcpcd[327]: forked to background, child pid 380
+May 23 17:13:56 raspberrypi systemd[1]: Started dhcpcd on all interfaces.
+May 23 17:13:56 raspberrypi systemd[1]: Reached target Network.
+May 23 17:13:56 raspberrypi systemd[1]: Starting OpenBSD Secure Shell server...
+May 23 17:13:56 raspberrypi systemd[1]: Starting /etc/rc.local Compatibility...
+May 23 17:13:56 raspberrypi systemd[1]: Condition check resulted in fast remote file copy program daemon being skipped.
+May 23 17:13:56 raspberrypi systemd[1]: Starting Permit User Sessions...
+May 23 17:13:56 raspberrypi systemd[1]: Started Permit User Sessions.
+May 23 17:13:56 raspberrypi systemd[1]: Started OpenBSD Secure Shell server.
+May 23 17:14:01 raspberrypi rc.local[382]: WARN: volume was not unmounted cleanly.
+May 23 17:14:01 raspberrypi systemd[1]: Mounting FUSE Control File System...
+May 23 17:14:01 raspberrypi systemd[1]: Mounted FUSE Control File System.
+May 23 17:14:02 raspberrypi systemd[1]: Started /etc/rc.local Compatibility.
+May 23 17:14:02 raspberrypi systemd[1]: Started Serial Getty on ttyAMA0.
+May 23 17:14:02 raspberrypi systemd[1]: Started Getty on tty1.
+May 23 17:14:02 raspberrypi systemd[1]: Reached target Login Prompts.
+May 23 17:14:02 raspberrypi systemd[1]: Reached target Multi-User System.
+May 23 17:14:02 raspberrypi systemd[1]: Reached target Graphical Interface.
+May 23 17:14:02 raspberrypi systemd[1]: Starting Update UTMP about System Runlevel Changes...
+May 23 17:14:02 raspberrypi systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+May 23 17:14:02 raspberrypi systemd[1]: Started Update UTMP about System Runlevel Changes.
+May 23 17:14:02 raspberrypi systemd[1]: Startup finished in 3.286s (kernel) + 42.478s (userspace) = 45.764s.
+May 23 17:14:14 raspberrypi systemd[1]: Created slice User Slice of UID 1000.
+May 23 17:14:14 raspberrypi systemd[1]: Starting User Runtime Directory /run/user/1000...
+May 23 17:14:14 raspberrypi systemd[1]: Started User Runtime Directory /run/user/1000.
+May 23 17:14:14 raspberrypi systemd[1]: Starting User Manager for UID 1000...
+May 23 17:14:14 raspberrypi systemd[430]: Reached target Paths.
+May 23 17:14:14 raspberrypi systemd[430]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+May 23 17:14:14 raspberrypi systemd[430]: Listening on GnuPG network certificate management daemon.
+May 23 17:14:14 raspberrypi systemd[430]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+May 23 17:14:14 raspberrypi systemd[430]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+May 23 17:14:14 raspberrypi systemd[430]: Listening on GnuPG cryptographic agent and passphrase cache.
+May 23 17:14:14 raspberrypi systemd[430]: Reached target Sockets.
+May 23 17:14:14 raspberrypi systemd[430]: Reached target Timers.
+May 23 17:14:14 raspberrypi systemd[430]: Reached target Basic System.
+May 23 17:14:14 raspberrypi systemd[430]: Reached target Default.
+May 23 17:14:14 raspberrypi systemd[430]: Startup finished in 296ms.
+May 23 17:14:14 raspberrypi systemd[1]: Started User Manager for UID 1000.
+May 23 17:14:14 raspberrypi systemd[1]: Started Session c1 of user pi.
+May 23 17:14:21 raspberrypi systemd[1]: Reloading.
+May 23 17:14:21 raspberrypi systemd[1]: serial-getty@ttyAMA0.service: Current command vanished from the unit file, execution of the command list won't be resumed.
+May 23 17:14:21 raspberrypi systemd[1]: getty@tty1.service: Current command vanished from the unit file, execution of the command list won't be resumed.
+May 23 17:14:22 raspberrypi systemd[1]: Reloading.
+May 23 17:14:22 raspberrypi systemd[1]: Reloading.

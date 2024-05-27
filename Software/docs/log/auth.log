@@ -1,0 +1,18 @@
+May 23 17:13:25 raspberrypi systemd-logind[293]: Watching system buttons on /dev/input/event0 (soc:shutdown_button)
+May 23 17:13:25 raspberrypi systemd-logind[293]: New seat seat0.
+May 23 17:13:56 raspberrypi sshd[385]: Server listening on 0.0.0.0 port 22.
+May 23 17:13:56 raspberrypi sshd[385]: Server listening on :: port 22.
+May 23 17:14:01 raspberrypi sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/sbin/dphys-swapfile swapoff
+May 23 17:14:01 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 23 17:14:01 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:14:01 raspberrypi sudo:     root : TTY=unknown ; PWD=/ ; USER=root ; COMMAND=/bin/mount -t exfat /dev/sda1 /home/pi/USB
+May 23 17:14:01 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 23 17:14:01 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:14:14 raspberrypi login[419]: pam_unix(login:session): session opened for user pi by LOGIN(uid=0)
+May 23 17:14:14 raspberrypi systemd-logind[293]: New session c1 of user pi.
+May 23 17:14:14 raspberrypi systemd: pam_unix(systemd-user:session): session opened for user pi by (uid=0)
+May 23 17:14:21 raspberrypi sudo:       pi : TTY=serial0 ; PWD=/home/pi ; USER=root ; COMMAND=/bin/systemctl disable dphys-swapfile.service
+May 23 17:14:21 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+May 23 17:14:23 raspberrypi sudo: pam_unix(sudo:session): session closed for user root
+May 23 17:15:42 raspberrypi sudo:       pi : TTY=serial0 ; PWD=/home/pi ; USER=root ; COMMAND=/usr/bin/python Software/main_code.py true
+May 23 17:15:42 raspberrypi sudo: pam_unix(sudo:session): session opened for user root by (uid=0)

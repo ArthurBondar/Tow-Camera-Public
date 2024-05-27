@@ -1,0 +1,49 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error
+
+# wait for system to boot
+sleep 5
+
+USB_ROOT="/home/pi/USB"             # mounting point
+SOFTWARE_DIR="/home/pi/Software"
+INT_LOG="/home/pi/internal_log.txt" # internal log
+USB_FLASH="/dev/sda1"               # USB flash stick
+SEM="update.txt"                    # software update
+FILE="software.bin"                 # software file used
+MAIN_CODE="main_code.py"            # point of entry to the program
+MOUNTED="false"
+
+echo 'rc.local START'
+
+# removing any files from USB dir
+if [ "$(ls -A $USB_ROOT)" ]; then
+        sudo rm -r $USB_ROOT
+        echo 'mount directory cleaned'
+fi
+
+# check usb stick
+if [ "$(ls -A $USB_FLASH)" ]; then
+        sudo mount -t exfat $USB_FLASH $USB_ROOT >> $INT_LOG
+        sleep 1
+        echo 'USB Mounted'
+        MOUNTED="true"
+        # checking for new software file present
+        if [ -f "$USB_ROOT/$FILE" ]; then
+                echo 'Updating software' >> $INT_LOG
+                sudo 7z x -so $USB_ROOT/$FILE | tar -xv --overwrite -C $SOFTWARE_DIR/ >> $INT_LOG
+                #sudo cp -rf $USB_ROOT/*.py $SOFTWARE_DIR/
+                echo 'code copied'
+        fi
+else
+        echo 'no storage device present'
+fi
+
+echo 'Launching Script ..'
+sudo python $SOFTWARE_DIR/$MAIN_CODE $MOUNTED &
+echo 'rc.local STOP'
+exit 0

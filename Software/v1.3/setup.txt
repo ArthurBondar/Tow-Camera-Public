@@ -1,0 +1,39 @@
+
+# This file is used to set up the system configuration
+# Please refer to dodumentation for details
+
+[video]
+section length = 60
+resolution = 1920x1080
+framerate = 30
+bitrate = 10
+
+[system]
+set date-time = 2020-05-23 T 20:52:00
+status update interval = 2
+status log interval = 5
+sensor log interval = 5
+disk check interval = 2
+led interval = 0.1
+debug mode = off
+log detail = 10
+hdmi = off
+copy logs = off
+run script = off
+
+
+[camera]
+brightness = 0
+contrast = 32
+saturation = 64
+# hue = 0
+# white_balance_temperature_auto = 1
+# gamma = 100
+# gain = 0
+# power_line_frequency = 1
+# white_balance_temperature = 4600
+# sharpness = 3
+# backlight_compensation = 1
+# exposure_auto = 3
+# exposure_absolute = 156
+# exposure_auto_priority = 0

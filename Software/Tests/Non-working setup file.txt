@@ -1,0 +1,77 @@
+# This file is used to set up system configuration
+# Edit fields after the equals sign
+# Use comments, marked (#), for reference
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+########################################################################
+##                                                                    ##
+##     Duration of each video section in minutes (default 30)         ##
+##     section = 0 will create a single video file                    ##
+##                                                                    ##
+########################################################################
+section = 60
+
+########################################################################
+##                                                                    ##
+##     Annotate Date Time in the Video                                ##
+##     format: DD-MM-YYYY T HH:MM:SS                                  ##
+##     set time 1 minute ahead to account for boot delay              ##
+##                                                                    ##
+########################################################################
+use date-time = on
+set date-time = 2020-03-11 T 11:37:00
+
+########################################################################
+##                                                                    ##
+##     Video Settings                                                 ##
+##     Mode   Resolution     Ratio     Framerate   Field of View      ##
+##     1      1920x1080      16:9      0.1-30fps   Partial            ##
+##     2      3280x2464      4:3       0.1-15fps   Full               ##
+##     3      3280x2464      4:3       0.1-15fps   Full               ##
+##     4      1640x1232      4:3       0.1-40fps   Full               ##
+##     5      1640x922       16:9      0.1-40fps   Full               ##
+##     6      1280x720       16:9      40-90fps    Partial            ##
+##     7      640x480        4:3       40-90fps    Partial            ##
+##                                                                    ##
+########################################################################
+resolution = 1640x1232
+framerate = 40
+
+########################################################################
+##                                                                    ##
+##     Rotation of the camera module                                  ##
+##     Value between 0 and 359 degrees                                ##
+##                                                                    ##
+########################################################################
+rotation = 0
+
+########################################################################
+##                                                                    ##
+##     Limit video writing speed (bitrate) in Mbit/sec                ##
+##     Any value below 25 is acceptable                               ##
+##     Rate(Mps)   Quality   Write Speed   Size/Hr   Size/Day         ##
+##     25          highest   3.12 MB/s     11.3 GB   270 GB           ##
+##     15          high      1.87 MB/s     6.75 GB   162 GB           ##
+##     10          good      1.25 MB/s     4.50 GB   108 GB           ##
+##     5           medium    0.62 MB/s     2.25 GB   54  GB           ##
+##     0           bitrate limit is not applied                       ##
+##                                                                    ##
+########################################################################
+bitrate = 10
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Developper Settings
+
+# Starts the computer without running the software
+debug mode = off
+
+# Detail level for logging 0-Error, 1-Warning, 2-Info, 3-All
+log detail = 2
+
+# Interval for logging processor data to the disk (in minutes)
+log interval = 30
+
+# disable HDMI
+hdmi = off

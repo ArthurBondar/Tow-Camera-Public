@@ -1,0 +1,7 @@
+gst-launch-1.0 -ev filesrc location=test.srt ! text/x-raw,format=\(string\)utf8 ! mux.subtitle_0 videotestsrc num-buffers=300 ! videoconvert ! x264enc ! mux. mp4mux name=mux ! filesink location=out.mp4
+gst-launch-1.0 filesrc location=out.mp4 ! decodebin ! video/x-raw ! videoconvert ! subtitleoverlay name=over ! autovideosink  filesrc location=test.srt ! subparse ! over.
+gst-launch-1.0 filesrc location=out.mp4 ! decodebin ! video/x-raw ! videoconvert ! subtitleoverlay name=over ! autovideosink  filesrc location=test.srt ! subparse ! over. ! filesink location=sub.mp4
+
+gst-launch-1.0 filesrc location=out.mp4 ! decodebin ! video/x-raw ! videoconvert ! subtitleoverlay name=over ! ! mp4mux ! queue ! filesink location=sub.mp4  filesrc location=test.srt ! subparse ! over.
+
+gst-launch-1.0 -ev v4l2src device=/dev/video1 ! h264parse ! mp4mux ! queue ! filesink location=test.mp4

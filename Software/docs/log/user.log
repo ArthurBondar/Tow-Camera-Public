@@ -1,0 +1,7 @@
+May 23 17:13:25 raspberrypi mtp-probe: checking bus 1, device 3: "/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.1"
+May 23 17:13:25 raspberrypi mtp-probe: checking bus 1, device 4: "/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3"
+May 23 17:13:25 raspberrypi mtp-probe: bus: 1, device: 4 was not an MTP device
+May 23 17:13:25 raspberrypi mtp-probe: checking bus 1, device 5: "/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2"
+May 23 17:13:25 raspberrypi mtp-probe: bus: 1, device: 5 was not an MTP device
+May 23 17:13:25 raspberrypi mtp-probe: bus: 1, device: 3 was not an MTP device
+May 23 17:14:01 raspberrypi mount.exfat: volume was not unmounted cleanly
